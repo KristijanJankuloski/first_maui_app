@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.SidePage"
+             Title="Planning">
+    <ScrollView>
+        <VerticalStackLayout>
+            <ContentView>
+                <HorizontalStackLayout>
+                    <Label Text="Budget used:"></Label>
+                    <Label x:Name="budgetLabel" Text="0"></Label>
+                </HorizontalStackLayout>
+            </ContentView>
+            <ContentView>
+                <Grid>
+                    <Label Text="HI"></Label>
+                    <Entry x:Name="activityTitle"></Entry>
+                </Grid>
+            </ContentView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,30"
+            VerticalOptions="Start">
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Fill">
+                <Image Source="travel" HeightRequest="100" HorizontalOptions="Start"></Image>
+                <Label Text="Travel Planner" FontSize="Title" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End"></Label>
+            </HorizontalStackLayout>
+            <Label>Start date</Label>
+            <DatePicker x:Name="startDateSelector" Date="01/01/2022" DateSelected="startDateSelector_DateSelected"></DatePicker>
+            <Label>End date</Label>
+            <DatePicker x:Name="endDateSelector" Date="01/01/2022" DateSelected="endDateSelector_DateSelected"></DatePicker>
+            <Label>Budget</Label>
+            <Entry x:Name="budgetSelector" Keyboard="Numeric" TextChanged="budgetSelector_TextChanged" Completed="budgetSelector_Completed"></Entry>
+            <Button x:Name="btnStartPlanning" Text="Start Planning" Clicked="btnStartPlanning_Clicked"></Button>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+    
